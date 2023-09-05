@@ -1,2 +1,5 @@
 # web_scraping_cyberab_org
-Python web scraper for different tags enabled within cyberab.org database.
+Python web scraper for different tags enabled within cyberab.org database from the following link:
+https://cyberab.org/Catalog#!/c/s/Results/Format/list/Page/1/Size/9/Sort/NameAscending
+
+This program pulls name and address from all cards existing under a specific tag under the results of this webpage and stores it in an output csv file. The current uploaded version of the code is made for pulling objects with the C3PAO tag. Acquiring the lists for the RPO and RP tags was also part of the original task. This program can be applied to those two tags as well by altering a few variables in the program to match that data which are commented into the program. The first variable is the url which have each of those tags enabled. Second, the range function that is used in the for loop to iterate through the pages will need to have its upper limit changed to the number of pages of results of that specific tag. Lastly, the line of code where the DataFrame is converted to an output csv file can be adjusted to create a csv file of the appropriate name as it currently is set to be named "out_c3pao.csv."
